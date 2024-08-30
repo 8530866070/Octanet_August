@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180vh;
+    background-color: white;
+    backdrop-filter: blur(50px);
+    background-size: cover;
+    background-position: center;
+ }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #090909;
+    }
+
+    .container {
+      max-width: 90%;
+      height: 150vh;
+      margin: auto;
+      padding: 20px;
+      background-color: aliceblue;
+      border-radius: 5px;
+      box-shadow: 10px 10px 200px rgba(0, 0, 0, 0.1);
+      border: 2px solid white;
+      justify-content: center;
+      
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(71, 78, 84);
+    }
+    label{
+      font-weight: 600;
+      color: rgb(8, 13, 18);
+    }
+
+    input{
+      width: 100%;
+      height: 20px;
+      display: inline;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      color: rgb(3, 3, 3);
+      padding: 0 35px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+      
+      position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid rgb(8, 8, 8);
+    }
+
+    input[type="radio"] {
+      
+    }
+
+    label[for="newsletter"],
+    label[for="gender"] {
+      display: block;
+      margin-left: 52px;
+      margin-bottom: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+   .container select{
+            width: 350px;
+            height: 40px;
+            margin-right: 30px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 20px;
+
+    }
+    option{
+      color: rgb(1, 1, 1);
+      height: 600px;
+    }
+  </style>
+  <script>
+    function notice(){
+      alert("Your E-mail ID is Your User-ID")
+    }
+  </script>
+</head>
+<body>
+  <section>
+  <div class="container">
+    <h1 style="font-weight: 10000sPX;color: rgb(86, 3, 164);">SIGN-UP</h1>
+    <form action="submit.php" method="post">
+      <div style="width: 90%;height: 42px;background-color: rgb(56, 55, 55);border-radius: 20px;margin-top: 40px; padding: 2px; color: white;text-decoration: underline;justify-content: center;margin-bottom: 70px;"><h3 style="margin-left: 100px;">PERSONAL INFORMATION</h3></div> 
+      <label for="fname">1)*</label>
+      <input type="text" placeholder="First Name" id="username" name="username" required>
+
+      <label for="mname">2)*</label>
+      <input type="text" placeholder="Middle Name" id="username" name="username" required>
+
+      <label for="sname">3)*</label>
+      <input type="text" placeholder="Surname" id="username" name="username" required>
+<br><br>
+      
+
+      <label for="mobailno">4)*</label>
+      <input type="text" placeholder="Enter Mobail NO" id="username" name="username" required>
+
+      <label for="dob">5)*:</label>
+      <input type="date" id="dob" name="dob" required>
+<div class="gender" style="width: 90%;height: 40px;display: inline-flex;margin-top: 30px;">
+       <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br><br>
+</div>
+<br>
+<div style="width: 90%;height: 42px;background-color: rgb(56, 55, 55);border-radius: 20px;margin-top: 40px; padding: 2px; color: white;text-decoration: underline;justify-content: center;margin-bottom: 70px;"><h3 style="margin-left: 100px;">ADDRESS</h3></div> 
+ <label for="">1)*</label>
+  <select>
+      <option> State</option>
+      <option>Maharashtra</option>
+  </select>
+<label for="">2)*</label>
+  <select>
+      <option> District</option>
+      <option>Dharashiv</option>
+  </select>
+<label for="">3)*</label>
+  <select>
+      <option value="Talukka"> Talukka</option>
+      <option value="">Dharashiv</option>
+      <option value="">Tuljapur</option>
+      <option value="">Umarga</option>
+      <option value="">Kalamb</option>
+      <option value="">Paranda</option>
+      <option value="">Bhum</option>
+      <option value="">Lohara</option>
+      <option value="">Washi</option>
+  </select>
+<br>
+      <label for="fname">4)*</label>
+      <select>
+        <option value="Talukka"> Pin Code</option>
+        <option value="">Dharashiv</option>
+        <option value="">Tuljapur</option>
+        <option value="">Umarga</option>
+        <option value="">Kalamb</option>
+        <option value="">Paranda</option>
+        <option value="">Bhum</option>
+        <option value="">Lohara</option>
+        <option value="">Washi</option>
+    </select>
+
+      <label for="mname">5)*</label>
+      <input type="text" placeholder="Enter Village" id="username" name="username" required>
+     
+    <br>
+      <div style="width: 90%;height: 42px;background-color: rgb(56, 55, 55);border-radius: 20px;margin-top: 40px; padding: 2px; color: white;text-decoration: underline;justify-content: center;margin-bottom: 70px;"><h3 style="margin-left: 100px;">USER-ID & PASSWORD</h3></div> 
+      <label for="fname">1)*</label>
+      <input type="text" placeholder="Enter E-mail-id For User Id" id="username" name="username" required>
+
+      <label for="mname">2)*</label>
+      <input type="text" placeholder="Password" id="Password" name="username" required>
+
+      <label for="sname">3)*</label>
+      <input type="text" placeholder="Comfirm Password" id="username" name="username" required>
+<br><br>
+<button type="" onclick="notice()" style="width: 120px;height: 30px;background-color: rgb(31, 211, 15);color: rgb(2, 1, 4);font-weight: 800;border-radius: 20px;margin-left: 45%;"><a href="login.html">Save</a></button>
+</form>
+  </div>
+</section>
+</body>
+</html>
